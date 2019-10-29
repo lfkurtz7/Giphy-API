@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy API</title>
+    <link rel="stylesheet" type="style/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>GIF Collection</h1>
+        <form id="search">
+            <label for="gif-input">GIF Search</label>
+            <input type="text" id="text-input">
+            <input id="add-category" type="submit" value="Add">
+        </form>
+
+        
+        <button data-search="raccoons" class="btn btn-outline-primary">Raccoons</button>
+        <button data-search="french+bulldogs" class="btn btn-outline-primary">Frenchies</button>
+        <button data-search="guinea pigs" class="btn btn-outline-primary">Guinea Pigs</button>
+        <button data-search="turtles" class="btn btn-outline-primary">Turtles</button>
+        <button data-search="goats" class="btn btn-outline-primary">Goats</button>
+        <button data-search="otters" class="btn btn-outline-primary">Otters</button>
+        <button data-search="elephants" class="btn btn-outline-primary">Elephants</button>
+        <button data-search="dogs" class="btn btn-outline-primary">Dogs</button>
+        <button data-search="sloths" class="btn btn-outline-primary">Sloths</button>
+
+        <div id="GIFArea"></div>
+        <br>
+
+
+    </div>
+
+
+
+    <script type="text/javascript" script src="assets/javascript/giphy.js">
+
+
+
+    </script>
+
+</body>
+
+</html>

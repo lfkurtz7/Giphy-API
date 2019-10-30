@@ -2,11 +2,12 @@ var topics = ["Raccoons", "French Bulldogs", "Guinea Pigs", "Turtles", "Goats", 
 
 DisplayOptionButtons(topics)
 
-$("button").on("click", HandleGIFClick)
+$(document).on("click", ".btnClick", HandleGIFClick);
 
 $("#add-category").on("click", HandleCategoryADD);
 
 $(document).on("click", ".gifCard", GIFmove);
+
 
 function HandleGIFClick() {
     $("#GIFArea").empty();
@@ -64,6 +65,7 @@ function DisplayOptionButtons(topics) {
     $("#buttonArea").empty();
     for (var i=0; i < topics.length; i++) {
         var btn = $("<button>").addClass("btn btn-outline-primary");
+        btn.addClass("btnClick")
         btn.attr("data-search", topics[i]);
         btn.text(topics[i]);
         $("#buttonArea").append(btn);

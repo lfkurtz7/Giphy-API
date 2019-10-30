@@ -14,7 +14,7 @@ function HandleGIFClick() {
     var x = $(this).attr("data-search");
     console.log(x)
 
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=aRbD2Jz1V9nKARvMpsFPRtUxQVgaLmUH&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=aRbD2Jz1V9nKARvMpsFPRtUxQVgaLmUH&limit=10";
     console.log(queryURL);
 
     $.ajax({ url: queryURL, method: 'GET' })
@@ -57,9 +57,6 @@ function HandleCategoryADD(event) {
 
 }
 
-// issue with either HandleCategoryAdd or DisplayOptionsButtons--text inputs display as buttons
-// but do not function when clicked. New buttons aren't pulling info from Giphy API, just appearing 
-// on the screen. Need to figure out how to get new buttons to pull API info!!!!
 
 function DisplayOptionButtons(topics) {
     $("#buttonArea").empty();

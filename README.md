@@ -1,3 +1,5 @@
 # Giphy-API
 https://lfkurtz7.github.io/Giphy-API/
-This project utilizes an API to render GIF's from Giphy. I chose an 'animals' theme, but users can search for new categories and add them to the categories list. The rating of the gifs are displayed on the page, and gifs animate on click. 
+
+  This project uses the GIPHY API to populate Gifs of the users choosing. I chose an 'animals' theme, but the search functionality can render any gif avalible through the API. Ratings of the gifs are displayed on the page and do not animate until clicked for user experience.
+  
